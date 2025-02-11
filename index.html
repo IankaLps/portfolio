@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto Portfólio">
-    <meta name="author" content="Ianka Lopes">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="icon" href="./assets/img/favicon.svg"/>
 
-    <title>Portfólio - Ianka Lopes</title>
+        <!-- Fontes do Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- Fonte do Google - Poppins -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projeto Portfólio">
+        <meta name="author" content="Ianka Lopes">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <link rel="icon" href="./assets/img/favicon.svg"/>
+
+        <!-- Link para a Folha de Estilo CSS -->
+        <link rel="stylesheet" href="./assets/css/styles.css">
+
+        <title>Portfólio - Ianka Lopes</title>
 </head>
+
 <body>
 
-    <!-- Cabeçalho da Página -->
-    <header>
+        <!-- Cabeçalho da Página -->
+        <header class="flex menu_container">
 
-        <!-- Conteudo do Cabeçalho -->
-        <div id="header_content">
+            <!-- Conteudo do Cabeçalho -->
+            <div id="header_content" class="menu_content">
 
             <!-- Título do Cabeçalho -->
-            <div id="tituto"> 
-               <a href="#">Universo</a> 
+            <div id="titulo"> 
+            <h2>
+                <a href="#">
+                    <img src="./assets/img/twinkle.png" alt="Coração Pixel" width="35">
+                    &lt;Ianka_Lps/&gt;
+                </a>
+            </h2>
             </div>
 
             <!-- Menu -->
-            <div id="menu">
+            <div id="menu" class="flex">
                 <nav>
-
                     <!-- Marcadores não Ordenados -->
-                    <ul>
+                    <ul class="flex menu_list">
                         <li><a href="#">Home </a></li>
                         <li><a href="#about">Sobre</a></li>
                         <li><a href="#contact">Contato</a></li>
@@ -42,75 +59,104 @@
     <!-- Seção Principal da Página -->
     <main> 
 
-        <section id="home">
+        <!-- Seção - Home -->
+        <section id="home" class="flex home_container">
 
-            <article id="home_texto">
+            <article id="home_texto" class="flex home_content">
 
-                <h4>Bem-vindo ao Novo Universo</h4>
-                <h1>Mundos diferentes para pessoas diferentes</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nemo ipsa, aliquid odit culpa nesciunt, neque sunt praesentium sapiente dolor repellendus, harum saepe similique eius! Odit quis rerum fugiat corrupti?</p>
-                <a href="https://github.com/IankaLps" target="_blank">Explorar</a>
+                <h4>Bem-vindo(a) ao Meu Portfólio!</h4>
+                <h1>Cada projeto, uma nova experiência.</h1>
+                <p>Aqui você encontrará projetos que combinam design, tecnologia e funcionalidade. 
+                    Desenvolvo soluções modernas e responsivas com JavaScript, TypeScript, Node.js 
+                    e React.js. Explore e confira meu trabalho!</p>
+                
+                <a 
+                    href="https://github.com/IankaLps" 
+                    target="_blank"
+                    class="botao"
+                >
+                    Explorar
+                </a>
+
             </article>
 
-            <article id="home_imagem">
+            <article id="home_imagem" class="flex home_content">
                 <img 
-                    src="./assets/img/astronauta.svg" 
-                    alt="Capacete de Astronauta Animado"
+                    src="./assets/img/desktop-computer-animate.svg" 
+                    alt="Computador Rosa Animado"
                 >
             </article>
 
         </section>
 
-        <section id="about">
-                <img 
-                    src="./assets/img/user_02.svg" 
-                    alt="Foto do Perfil do GitHub"
+            <!-- Seção - About -->
+        <section id="about" class="flex about_container">
+
+            <img 
+                src="./assets/img/foto-perfil.jpg" 
+                alt="Foto do Perfil do GitHub"
+            >
+
+            <article id="about_texto">
+                <h2>Sobre mim</h2>
+                <p>Olá! Meu nome é Ianka Lopes e sou uma desenvolvedora fullstack focada em tecnologia, design e soluções criativas. 
+                    Com formação técnica em TI, venho aprimorando minhas habilidades em desenvolvimento web, especialmente com JavaScript, 
+                    TypeScript, Node.js, Nest.js e React.js. Atualmente, estou me dedicando ao bootcamp da Generation Brasil para evoluir 
+                    na carreira. Sou organizada, proativa e valorizo o trabalho em equipe. Meu objetivo é criar soluções digitais eficientes 
+                    e impactantes, sempre buscando aprendizado e crescimento.</p>
+
+                <div id="about_github" class="flex about_github">
+                <a
+                    href="https://github.com/IankaLps"
+                    target="_blank"
+                    class="botao"
                 >
+                    Github
+                </a>
+                    <p>200 Seguidores</p>
+                    <p>20 Repositórios</p>
+                </div>
 
-                <article id="about_texto">
-                    <h1>Sobre mim</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sunt dicta nobis cumque distinctio tempora explicabo alias. Modi ut optio cum possimus nobis iure sit aliquid debitis excepturi voluptates! Accusamus.</p>
+            </article>
+    </section>
 
-                    <div id="about_github">
-                        <a
-                            href="https://github.com/IankaLps"
-                            target="_blank"
+
+            <!-- Seção - Contact -->
+            <section id="contact" class="contato_container">
+
+                <article id="redes_socias" class="contato_content">
+                    <h4>Contate-me</h4>
+                    <p>🤝Aberta a novas oportunidades! Fale comigo.</p>
+
+
+                    <div id="icones_redes_sociais" class="social_container">
+                    <a href="https://www.linkedin.com/in/iankalps/" target="_blank">
+                        <img 
+                            src="./assets/img/linkedin.svg"
+                            alt="Logo do Linkedin"
+                            class="social_icon"
                         >
-                            Github
-                        </a>
-                        <p>200 Seguidores</p>
-                        <p>20 Repositórios</p>
+                    </a>
+                    <a href="" target="_blank">
+                        <img 
+                            src="./assets/img/github.svg"
+                            alt="Logo do GitHub"
+                            class="social_icon"
+                    >
+                    </a>
+                    <a href="" target="_blank">
+                        <img 
+                            src="./assets/img/instagram.svg"
+                            alt="Logo do Instagram"
+                            class="social_icon"
+                    >
+                    </a>
                     </div>
                 </article>
-        </section>
 
-        <section id="contact">
-
-            <h4>Contate-me</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo modi perspiciatis, ut aut voluptatem ab hic ex rem earum cumque ea excepturi animi deleniti ad, fugiat officiis. Quod, adipisci. Placeat.</p>
-
-            <div id="icones_redes_sociais">
-                <a href="https://www.linkedin.com/in/iankalps/" target="_blank">
-                    <img 
-                        src="./assets/img/linkedin.svg"
-                        alt="Logo do Linkedin"
-                    >
-                </a>
-                <a href="" target="_blank">
-                    <img 
-                        src="./assets/img/github.svg"
-                        alt="Logo do GitHub"
-                    >
-                </a>
-                <a href="" target="_blank">
-                    <img 
-                        src="./assets/img/instagram.svg"
-                        alt="Logo do Instagram"
-                    >
-                </a>
-            </div>
-
+            <!-- Seção - Formulário-->
             <form action="" method="POST">
+                
                 <label for="none">Nome</label>
                 <input 
                     id="nome" 
@@ -146,7 +192,7 @@
                 >
                 </textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" class="botao">Enviar</button>
             </form>
 
         </section>
@@ -154,9 +200,11 @@
     </main>
 
     <!-- Rodapé da Página -->
-    <footer>
-        Feito com 🧡 por Generation Brasil - 2025
+    <footer> 
+        Feito com <span class="heart">❤</span> por Ianka Lps - 2025
     </footer>
+    
+    
 </body>
 
 </html>
