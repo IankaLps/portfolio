@@ -116,6 +116,34 @@ a {
     padding: 0 1.5rem;
 }
 
+/* Ajuste para o título do cabeçalho */
+#titulo h2 a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espaço entre o ícone e o nome */
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#menu_content_sucess h2 {
+    font-size: 1.5rem; /* Mesmo tamanho da página sucess.html */
+}
+
+#menu_content_sucess h2 a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-size: inherit;
+}
+
+/* Ajuste para o ícone */
+#titulo img {
+    width: 35px;
+    height: auto;
+    max-width: 100%;
+}
+
 /* Estilização - Seção Home */
 .home_container{
     max-width: 1120px;
@@ -182,6 +210,11 @@ h4{
     padding: 1rem;
 }
 
+#menu_content_sucess img {
+    width: 35px;
+    height: auto;
+    max-width: 100%;
+}
 /* Estilização - Seção About */
 .about_container{
     max-width: 1120px;
@@ -209,7 +242,6 @@ h4{
     text-align: center;
 }
 
-
 .about_github {
     justify-content: space-evenly;
 }
@@ -220,13 +252,12 @@ h4{
 
 /* Estilização - Seção Contact */
 .contato_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.25rem;
+    gap: 2rem;
     max-width: 1120px;
-    margin: 4rem, auto, 2rem;
+    margin: 4rem auto 2rem;
     padding: 0 2rem;
 }
 
@@ -277,11 +308,11 @@ form {
     flex-direction: column;
     margin: 7rem 0 0 0;
     padding: 1.25rem;
-    border: none;
     border: 2px solid var(--pink-400);
-    padding: 1.5rem; /* Espaçamento interno */
     border-radius: 8px;
-    margin-bottom: 3rem; /* Distância do footer */
+    width: 100%;
+    max-width: 500px; /* Ajuste o tamanho máximo */
+    min-width: 300px; /* Evita que fique muito pequeno */
 }
 
 form label {
@@ -395,10 +426,6 @@ footer {
         width: 80%
     }
 
-    /* .home_content img{
-        width: 80%;
-    } */
-
     #home_texto{
         margin-top: 0.5rem;
     }
@@ -409,43 +436,42 @@ footer {
 
     /* Ajustes na Seção About*/
 
-    .sobre_container{
+    .about_container{
         flex-direction: column;
         width: 100%;
         height: auto;
         margin-top: 3rem;
     }
 
-    .sobre_container img{
+    .about_container img{
         width: 70%;
     }
 
-    .sobre_container h1{
+    .about_container h1{
         font-size: 1.75rem;
         line-height: 2.25rem;
     }
 
-    .sobre_github{
+    .about_github{
         flex-direction: column;
         gap: 0.5rem;
     }
 
-    .sobre_github p{
+    .about_github p{
         display: none;
     }
 
-    .sobre_github .botao{
+    .about_github .botao{
         width: 80%;
     }
     
     /* Ajustes Contato */
 
-    .contato_container{
-        grid-template-columns: 1fr;
-        width: 100%;
-        height: auto;
-        margin-top: 2rem;
-        padding: 0 1rem;
+    .contato_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .contato_content{
@@ -461,6 +487,13 @@ footer {
         margin: 1rem;
     }
 
+    .contato_content, form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     /* Ajustes da Seção Redes Sociais */
 
     .social_container{
@@ -474,7 +507,6 @@ footer {
     }
 
     /* Ajustes da Seção Form */
-
     form{
         margin: 1rem 0 0 0;
         padding: 1rem;
@@ -483,6 +515,14 @@ footer {
 
 }
 
+    /* Ajustes - Página Sucess */
+    #menu_content_sucess img {
+        width: 25px;
+    }
+
+    #menu_content_sucess h2 a {
+        font-size: 1.1rem;
+    }
 
 
 /* -- Tablet - Telas até 960px -- */
@@ -590,11 +630,10 @@ footer {
     
     /* Ajustes Contato */
     .contato_container {
-        grid-template-columns: 1fr;
-        width: 100%;
-        height: auto;
-        margin-top: 2rem;
-        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .contato_content {
@@ -626,5 +665,14 @@ footer {
         margin: 1rem 0 0 0;
         padding: 1rem;
         margin-bottom: 4rem; /* Espaço intermediário */
+    }
+
+    /* Ajustes - Página Sucess */
+    #menu_content_sucess img {
+        width: 30px;
+    }
+
+    #menu_content_sucess h2 a {
+        font-size: 1.3rem;
     }
 }
