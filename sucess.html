@@ -2,24 +2,40 @@
 <html lang="pt-br">
 
 <head>
+     <!-- Fontes do Google -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+     <!-- Fonte do Google - Poppins -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Generation Brasil">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="icon" href="./assets/img/favicon.svg" />
+    <link rel="icon" href="./assets/img/twinkle.png"/>
 
-    <title>Universe</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <title>Portfólio - Ianka Lopes</title>
 </head>
 <body>
     <!-- Cabeçalho da Página -->
-    <header>
+    <header class="flex menu_container">
 
         <!-- Conteudo do Cabeçalho -->
-        <div id="header_content">
+        <div id="header_content" class="menu_content">
 
-             <div id="menu_content_sucess">
-                <a href="#">Universe</a>
+            <!-- Título do Cabeçalho -->
+            <div id="titulo">
+
+                <h2>
+                    <a href="index.html">
+                    <img src="./assets/img/twinkle.png" alt="Twinkle" width="35">
+                        &lt;Ianka_Lps/&gt;
+                    </a>
+                </h2>
             </div>
         </div>
 
@@ -28,20 +44,21 @@
     <!-- Seção Principal da Página -->
     <main>
 
-        <section id="home">
-            <article id="home_texto">
+        <section id="home" class="flex home_container_sucess">
+            <article id="home_texto" class="flex">
 
                 <h1>E-mail enviado com Sucesso!</h1>
                 <h4>Obrigado por entrar em contato, logo mais retornarei sua mensagem!</h4>
-                <a href="index.html">Voltar</a>
+                
+                <a class="botao" href="index.html">Voltar</a>
             </article>
         </section>
 
     </main>
 
     <!-- Rodapé da Página -->
-    <footer>
-        Feito com 🧡 por Generation Brasil - 2024
+    <footer> 
+        Feito com <span class="heart">❤</span> por Ianka Lps - 2025
     </footer>
 
 </body>
