@@ -1,0 +1,678 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --gray-400: #505861;
+    --gray-100: #E4E4E4;
+    --black-800: #171717;
+    --white: #F9F9F9;
+
+    --pink-100: #FEF0F3;
+    --pink-300: #2b0000;
+    --pink-400: #E62991;
+    --pink-600: #7A0650;
+    
+}
+
+html{
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--pink-100);
+    color: var(--pink-300);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+.botao{
+    color: var(--pink-400);
+    text-align: center;
+    padding: 12px 32px;
+    background: none;
+    border: 1px solid var(--pink-400);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.botao:hover{
+    background-color: var(--pink-400);
+    color: var(--white)
+}
+
+
+.botao:active {
+    background-color: var(--pink-300); /* Um tom mais escuro quando pressionado */
+    color: var(--white); /* Texto fica branco ao clicar */
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Estilização - Seção Header */
+.menu_container{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--pink-400);
+    border-bottom: 1px solid var(--pink-300);
+    filter: opacity(0.9);
+}
+
+.menu_container a{
+    color: var(--white);
+    font-weight: 700;
+}
+
+.menu_container a:hover{
+    color: var(--pink-300);
+}
+
+.menu_container a:active {
+    color: var(--pink-100); /* Tom mais escuro quando pressionado */
+}
+
+.menu_content{
+    max-width: 1120px;
+    padding: 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_list{
+    list-style: none;
+    text-align: center;
+}
+
+.menu_list li{
+    margin-left: 1rem;
+}
+
+#menu_content_sucess {
+    width: 100%;
+    max-width: 1120px;
+    padding: 0 1.5rem;
+}
+
+/* Ajuste para o título do cabeçalho */
+#titulo h2 a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espaço entre o ícone e o nome */
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#menu_content_sucess h2 {
+    font-size: 1.5rem; /* Mesmo tamanho da página sucess.html */
+}
+
+#menu_content_sucess h2 a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-size: inherit;
+}
+
+/* Ajuste para o ícone */
+#titulo img {
+    width: 35px;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Estilização - Seção Home */
+.home_container{
+    max-width: 1120px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    height: calc(100vh - 6.25rem);
+}
+
+.home_container p,
+h1,
+h4{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.home_container h1{
+    font-size: 2.25rem;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+.home_container h4{
+    font-weight: 700;
+}
+
+.home_container p{
+    margin: 1rem 0;
+}
+
+.home_container .botao{
+    width: 80%;
+}
+
+.home_content{
+    width: 50vw;
+    flex-direction: column;
+}
+
+.home_content img{
+    display: flex;
+    width: 80%;
+}
+
+/* Estilização - Página Sucess */
+.home_container_sucess {
+    height: calc(100vh - 12.5rem);
+    max-width: 1120px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+#home_texto {
+    width: 50vw;
+    flex-direction: column;
+}
+
+#home_texto h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#home_texto h4 {
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+#menu_content_sucess img {
+    width: 35px;
+    height: auto;
+    max-width: 100%;
+}
+/* Estilização - Seção About */
+.about_container{
+    max-width: 1120px;
+    margin: -1.25rem auto;
+    padding: 0 1rem;
+    height: 100vh;
+}
+
+.about_container img{
+    margin: 1rem;
+    width: 35%;
+    border: 5px solid var(--pink-400);
+    border-radius: 50%;
+}
+
+.about_container h2{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about_container p{
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.about_github {
+    justify-content: space-evenly;
+}
+
+#about_texto {
+    margin-left: 2rem;
+}
+
+/* Estilização - Seção Contact */
+.contato_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1120px;
+    margin: 4rem auto 2rem;
+    padding: 0 2rem;
+}
+
+.contato_container h4 {
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contato_content {
+    flex-direction: column;
+    margin: 4rem 0 0 0;
+    font-size: 1.25rem;
+}
+
+.contato_content p {
+    display: block;
+    text-align: justify;
+}
+
+
+/* -- Estilização - Seção Redes Socias -- */
+.social_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0 0 0;
+}
+
+.social_icon {
+    width: 4.75rem;
+    height: 4.75rem;
+}
+
+.social_icon:hover {
+    filter: brightness(0) 
+            saturate(100%) 
+            invert(26%) 
+            sepia(75%) 
+            saturate(3853%) 
+            hue-rotate(311deg) 
+            brightness(95%) 
+            contrast(90%);
+}
+
+/* -- Estilização - Seção Form -- */
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 0 0 0;
+    padding: 1.25rem;
+    border: 2px solid var(--pink-400);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px; /* Ajuste o tamanho máximo */
+    min-width: 300px; /* Evita que fique muito pequeno */
+}
+
+form label {
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+form input,
+textarea {
+    width: 100%;
+    margin: 0.5rem 0 1rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+form span {
+    margin-bottom: 0.5rem;
+    margin-left: 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: red;
+}
+
+/* Estilização - Seção Footer */
+footer {
+    margin: 0;
+    padding: 2rem;
+    color: var(--white);
+    background-color: var(--pink-400);
+    filter: opacity(0.9);
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid var(--pink-600);
+}
+
+.heart {
+    margin: 0 8px; /* Add Espaço antes e depois do coração */
+}
+
+/* --Modo Responsivo -- */
+/* -- Smartphone - Telas até 480px -- */
+@media screen and (max-width: 490px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main{
+        display:flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    footer{
+        margin-top: auto;
+    }
+
+    /* Ajustes no Menu*/
+
+    .menu_container{
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .menu_content{
+        justify-content: center;
+        max-width: 100%;
+        /* padding: 1rem; */
+    }
+
+    #titulo a{
+        font-size: 1.75rem;
+    }
+
+    #titulo img {
+        width: 14px;
+        height: auto;
+    }
+
+    .menu_list{
+        display: none;
+    }
+
+    /* Ajustes na Seção Home*/
+
+    .home_container{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .home_content{
+        width: 100%;
+    }
+
+    .home_content h1{
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .home_content .botao, img{
+        width: 80%
+    }
+
+    #home_texto{
+        margin-top: 0.5rem;
+    }
+
+    #home_imagem{
+        margin-bottom: 0;
+    }
+
+    /* Ajustes na Seção About*/
+
+    .about_container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    .about_container img{
+        width: 70%;
+    }
+
+    .about_container h1{
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .about_github{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .about_github p{
+        display: none;
+    }
+
+    .about_github .botao{
+        width: 80%;
+    }
+    
+    /* Ajustes Contato */
+
+    .contato_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contato_content{
+        width: 100%
+    }
+
+    .contato_content h4{
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .contato_content p{
+        margin: 1rem;
+    }
+
+    .contato_content, form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Ajustes da Seção Redes Sociais */
+
+    .social_container{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .social_icon{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    /* Ajustes da Seção Form */
+    form{
+        margin: 1rem 0 0 0;
+        padding: 1rem;
+        margin-bottom: 5rem; /* Mais espaço do footer */
+    }
+
+}
+
+    /* Ajustes - Página Sucess */
+    #menu_content_sucess img {
+        width: 25px;
+    }
+
+    #menu_content_sucess h2 a {
+        font-size: 1.1rem;
+    }
+
+
+/* -- Tablet - Telas até 960px -- */
+@media screen and (max-width: 960px) {
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+
+    /* Ajustes no Menu */
+    .menu_container {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .menu_content {
+        justify-content: space-between;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    #titulo a {
+        font-size: 1.75rem;
+    }
+
+    #titulo img {
+        width: 16px;
+        height: auto;
+    }
+
+    .menu_list {
+        display: none;
+    }
+
+    /* Ajustes na Seção Home */
+    .home_container {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .home_content {
+        width: 100%;
+    }
+
+    .home_content h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .home_content .botao, img {
+        width: 70%;
+    }
+
+    #home_texto {
+        margin-top: 0.5rem;
+    }
+
+    #home_imagem {
+        margin-bottom: 0;
+    }
+
+    /* Ajustes na Seção About */
+    .about_container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    .about_container img {
+        width: 50%;
+    }
+
+    .about_container h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .about_github {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about_github p {
+        display: none;
+    }
+
+    .about_github .botao {
+        width: 70%;
+    }
+    
+    /* Ajustes Contato */
+    .contato_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contato_content {
+        width: 100%;
+    }
+
+    .contato_content h4 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .contato_content p {
+        margin: 1rem;
+    }
+
+    /* Ajustes da Seção Redes Sociais */
+    .social_container {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .social_icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    /* Ajustes da Seção Form */
+    form {
+        margin: 1rem 0 0 0;
+        padding: 1rem;
+        margin-bottom: 4rem; /* Espaço intermediário */
+    }
+
+    /* Ajustes - Página Sucess */
+    #menu_content_sucess img {
+        width: 30px;
+    }
+
+    #menu_content_sucess h2 a {
+        font-size: 1.3rem;
+    }
+}
